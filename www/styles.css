@@ -1,0 +1,1453 @@
+/* --------------------
+   Background Styling
+-------------------- */
+body {
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* --------------------
+   Navbar Styling
+-------------------- */
+
+/* Navbar container fixed to top with centered alignment */
+.navbar.navbar-default.navbar-static-top {
+  position: fixed;
+  top: 0;
+  width: 95%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1000;
+  background-color:#01415c; 
+  padding: 10px 0;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border-radius: 50px;
+
+}
+
+/* Center the navigation links */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center the nav links horizontally */
+  padding: 0;
+  margin: 0;
+  width: 50%; /* Make sure the navbar takes the full width */
+}
+
+.background-img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Background.png') no-repeat center bottom;
+  background-size: cover;
+  z-index: -1;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+ 
+
+
+
+
+
+
+
+/* Navbar tabs (centered and fitted without extra spaces) */
+.nav-item {
+  margin: 0; /* Remove extra margin */
+  padding: 0 15px; /* Adjust padding for equal spacing inside tabs */
+  text-align: center; /* Center the text inside the tab */
+  flex: 1; /* Allow the tabs to spread equally across the navbar */
+}
+
+/* Style individual links */
+.nav-link {
+  padding: 10px 15px; /* Ensure equal padding inside links */
+  color: #ffffff; /* Default white color */
+  text-align: center;
+}
+
+.nav-link.active {
+  color: #fbff00 !important; /* Highlight active link */
+}
+
+/* Ensure that the dropdowns are also centered */
+.navbar-nav > .dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.amazing-paragraph {
+  background: linear-gradient(135deg, #000000 0%, #171717 100%); /* Black gradient background */
+  padding: 50px;
+  border-radius: 15px;
+  text-align: left;
+  width: 50%;
+  margin-top: 200px;
+  margin-left: 2%;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.amazing-paragraph:hover {
+  transform: scale(1.05); /* Slightly enlarges the box on hover */
+  background: linear-gradient(135deg, #1c1c1c 0%, #505050 100%); /* Darker gradient on hover */
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.5); /* Glowing white shadow */
+}
+
+.amazing-paragraph h1 {
+  color: #ffffff; /* White text for header */
+  font-size: 2.1em;
+  margin-bottom: 15px;
+  font-weight: 700;
+  overflow: hidden; /* For typing effect */
+  white-space: nowrap;
+  
+  width: 100%; /* Keeps the width fixed */
+  min-width: 20ch; /* Minimum width to fit the longest word or phrase (e.g., "Interactive") */
+  display: inline-block; /* Prevent line breaks */
+}
+
+.amazing-paragraph p {
+  color: #cccccc; /* Light gray text for paragraph */
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color:#fbff00d3; /* White button */
+  color: #000000; /* Black text on button */
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #666666; /* Dark gray on hover */
+  color: #ffffff; /* White text on hover */
+  transform: translateY(-5px);
+}
+
+
+
+/* ####################### Report Pragraph  ####################### */
+
+/* Black background box for Analysis tab */
+.analysis-box {
+  background-color: black;
+  color: white;
+  padding: 60px;
+  margin-bottom: 50px;
+  width: 95%;
+  margin-top: 150px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 50px;
+  
+
+}
+
+/* Two-column newspaper layout */
+.newspaper-style {
+  column-count: 2;
+  column-gap: 50px;
+  text-align: justify;
+}
+
+.path-line {
+  
+  top: 15px;    /* Adjust the position relative to the box */
+  left: 25px;
+  bottom: 15px;
+  width: 2px;
+  background-color: red; /* Color of the path line */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+
+
+/* Fade-in animation triggered by GSAP */
+.fade-in {
+  opacity: 0;
+}
+/* Newspaper-style layout for text content */
+.newspaper-style h2 {
+  font-size: 24px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.newspaper-style p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+}
+
+ 
+/* Ai Job Recomandation  */
+
+.ai-job-suggestions-container {
+  padding: 30px;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  width: 95%;
+  margin-top: 150px;
+  margin-left: 2%;
+  margin-right: 2%;
+
+  
+}
+
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+}
+
+.filter-section select, .filter-section input {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.btn-filter {
+  padding: 10px 20px;
+  background-color: #fbff00d3 ;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.job-suggestions h2 {
+  font-size: 24px;
+  color: black;
+}
+
+.job-suggestions #job_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.job-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 1250px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 7%;
+  margin-right: 20%;
+}
+
+.job-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: red;
+  font-weight: bold;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.job-card .meta-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.job-card .level {
+  background-color: #e3f2fd;
+  color: red;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.job-card .status {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.job-card .posted-deadline {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #6c757d;
+}
+
+.job-card .apply-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color:#fbff00d3;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.job-card .apply-button:hover {
+  background-color: #0056b3;
+}
+
+.job-card .countdown-timer {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+
+/* AI Based Interview*/
+
+
+.interview{
+
+  margin-top: 150px;
+}
+
+#videoElement {
+  border: 3px solid #4CAF50;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.infoBox {
+  font-weight: bold;
+  color: #fff;
+}
+
+.infoBox.green {
+  background-color: #4CAF50;
+}
+
+.infoBox.blue {
+  background-color: #2196F3;
+}
+
+#start_interview {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start_interview:hover {
+  background-color: #45a049;
+}
+
+/* Homepage section styling */
+.homepage {
+  background-color: #1D603E;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 150px;
+}
+
+.header-text {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.homepage .btn {
+  background-color: #F8D308;
+  color: #1D603E;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.homepage .btn:hover {
+  background-color: #ffc107;
+  color: #1D603E;
+}
+
+/* Info boxes styling */
+.infoBox {
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #1D603E;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.infoBox h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.infoBox.blue {
+  background-color: #17A0DB;
+}
+
+.infoBox.green {
+  background-color: #1D603E;
+}
+
+.infoBox .value {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Interview Dashboard styling */
+.interview-dashboard {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 150px;
+}
+
+.interview-dashboard h3 {
+  color: #1D603E;
+  font-weight: bold;
+}
+
+.interview-dashboard .btn-success {
+  background-color: #17A0DB;
+  color: #fff;
+  font-weight: bold;
+}
+
+.interview-dashboard .btn-success:hover {
+  background-color: #1D6099;
+}
+
+/* Live Interview Area */
+.live-interview {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+}
+
+.live-interview h3 {
+  color: #1D603E;
+  font-weight: bold;
+}
+
+#videoElement {
+  border: 2px solid #17A0DB;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.question-area {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-area h3 {
+  color: #1D603E;
+  font-weight: bold;
+}
+
+.sidebarPanel .btn-primary {
+  background-color: #17A0DB;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sidebarPanel .btn-primary:hover {
+  background-color: #1D6099;
+}
+
+/* Footer styling */
+footer {
+  background-color: #1D603E;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .homepage, .interview-dashboard, .live-interview, .question-area {
+    padding: 15px;
+  }
+  
+  .header-text {
+    font-size: 1.8em;
+  }
+  
+  .intro-text, .infoBox h4 {
+    font-size: 1em;
+  }
+}
+
+
+
+/* Main Audio Controls Container */
+.audio-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Record Button */
+#record_button {
+  animation: pulse 1s infinite;
+  color: white;
+  background-color: #17A0DB;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+}
+
+/* Stop Button */
+#stop_button {
+  display: inline-block;
+  color: white;
+  background-color: #FF6347;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+}
+
+/* Play Button */
+#play_button {
+  color: white;
+  background-color: #32CD32;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+}
+
+/* Submit Button */
+#submit_audio {
+  color: white;
+  background-color: #1D603E;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+}
+
+/* Audio Playback */
+#audioPlayback {
+  display: block;
+  margin: 15px auto;
+  width: 80%;
+}
+
+/* Timer Display */
+.record-timer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Animated Recording Icon */
+@keyframes pulse {
+  0% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+  }
+  70% {
+      box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+
+/* Hide initially hidden elements */
+#stop_button,
+#play_button,
+#submit_audio,
+#audioPlayback {
+  display: none;
+}
+
+/* Show elements conditionally when recording or playback starts */
+.recording #stop_button,
+.recording .record-timer {
+  display: inline-block;
+}
+
+.recording #record_button {
+  display: none;
+}
+
+.ready-to-play #play_button,
+.ready-to-play #submit_audio,
+.ready-to-play #audioPlayback {
+  display: inline-block;
+}
+
+#timer_display {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.btn {
+  margin: 5px;
+}
+
+#audioPlayback {
+  display: block;
+  margin-top: 10px;
+}
+
+/***************************** Labor Market Insight **********************************/
+
+.header {
+  text-align: center;
+  background: linear-gradient(90deg, #1f8efa, #185aad);
+  padding: 20px;
+  color: white;
+  margin-top: 150px;
+}
+
+.filters {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-section {
+  margin: 20px 0;
+}
+
+.kpi-card {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.kpi-card:hover {
+  transform: scale(1.05);
+  background-color: #eef3fa;
+}
+
+.job-card {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h4 {
+  margin: 0;
+}
+
+.view-job-link {
+  color: #1f8efa;
+  font-weight: bold;
+}
+
+
+.overview-container {
+  position: relative;
+  margin-top: 150px;
+  background-image: url('Labor1.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  height: 350px;
+}
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust transparency and color here */
+  z-index: 1; /* Places overlay above background but below content */
+  border-radius: 20px;
+}
+.overview-content {
+  position: relative;
+  z-index: 2; /* Ensures content is above the overlay */
+}
+.overview-row {
+  display: flex;
+  gap: 20px;
+}
+.overview-card {
+  flex: 1;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.338);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 20px;
+}
+.overview-card:hover {
+  transform: scale(1.05); /* Scale up the card slightly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+.icon-style {
+  font-size: 30px;
+  color: #F8D308;
+  margin-bottom: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.overview-card:hover .icon-style {
+  color: #dbcf8a; /* Change icon color on hover */
+  transform: scale(1.2); /* Slightly enlarge icon */
+}
+.category-labels {
+  font-size: 14px;
+  color: white;
+  margin-top: 5px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.overview-card:hover .category-labels {
+  color: #17A0DB; /* Change label color on hover */
+  text-decoration: underline; /* Underline label text */
+}
+h3 {
+  font-size: 24px;
+  color:red;
+  font-weight: bold;
+}
+
+
+.charts-page {
+  background-color: #f9fafc;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for each chart container */
+.charts .box {
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.charts .box:hover {
+  transform: scale(1.03);
+}
+
+/* Titles for the boxes */
+.charts .box .box-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #34495e;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+/* Echarts and Plotly output */
+.echarts4r-output, .plotly-output {
+  height: 300px;
+  width: 100%;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .charts .box {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+}
+
+.content-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.job-listings-box {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 500px;  /* Fixed height for the box */
+  overflow-y: auto;  /* Enables vertical scrolling within the box */
+}
+
+.job-listings-box h3 {
+  margin-top: 0;
+  color: #333333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*########################################################### Our Team ################################*/
+
+/* General Team Section Styling */
+.team-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  color: #333;
+  margin-top: 150px;
+  border-radius: 15px;
+}
+
+/* Introductory Section Styling */
+.team-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-out;
+}
+
+.team-intro-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-intro-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #f1f1f1;
+}
+
+/* Individual Team Member Styling */
+.team-section {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.team-member {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.team-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #4A90E2;
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+
+.team-role {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icon {
+  color: #4A90E2;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #3b5998; /* Darker shade for hover effect */
+}
+
+.team-description {
+  font-size: 14px;
+  color: #555;
+  text-align: justify;
+  padding: 0 15px;
+}
+
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+/*#########################################   Footer Container #################################### */
+.footer {
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-about, .footer-nav, .footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footer-link:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.social-icon {
+  color: #4A90E2;
+  font-size: 18px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #ffcc00;
+}
+
+.footer-bottom {
+  background-color: #1c1c1c;
+  padding: 10px;
+  font-size: 12px;
+  color: #bfbfbf;
+  border-top: 1px solid #444;
+}
+
+
+
+
+
+
+
+.mode-select {
+  text-align: center;
+  padding: 20px;
+  margin-top: 150px;
+}
+
+.mode-card {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  background-color: #f8f9fa;
+}
+
+.mode-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mode-card h4 {
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+.mode-card p {
+  color: #6c757d;
+}
+
+.selected-mode {
+  border: 2px solid #007bff;
+}
+
+/* Container styling for the Text-Only Interview Mode panel */
+.text-only-interview {
+  background-color: #f4f4f9;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+}
+
+/* Header style */
+.text-only-interview h3 {
+  font-size: 1.8em;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Question output styling */
+#question_output {
+  font-size: 1.2em;
+  color: #444;
+  background-color: #e9f5fb;
+  border: 1px solid #17A0DB;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Text area input styling */
+#text_answer {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Feedback output styling */
+#text_feedback {
+  font-size: 1.1em;
+  color: #17A0DB;
+  background-color: #e6f7ff;
+  border: 1px solid #17A0DB;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+/* Buttons styling */
+#submit_text_answer, #next_question, #go_back {
+  width: auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Primary button style */
+#submit_text_answer {
+  background-color: #17A0DB;
+  color: white;
+  border: none;
+}
+
+#submit_text_answer:hover {
+  background-color: #0f86c1;
+}
+
+/* Next Question button style */
+#next_question {
+  background-color: #1D603E;
+  color: white;
+  border: none;
+  margin-left: 10px;
+}
+
+#next_question:hover {
+  background-color: #15582e;
+}
+
+/* Go Back button style */
+#go_back {
+  background-color: #888;
+  color: white;
+  border: none;
+  margin-left: 10px;
+}
+
+#go_back:hover {
+  background-color: #666;
+}
+
+.go-back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+.btn-secondary {
+  color: white;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+
+/* ########################################Hero Section Styling */
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background: linear-gradient(to right, #003366, #0066cc);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 150px;
+}
+.hero-btn {
+  margin-top: 20px;
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Mentor Cards */
+.mentor-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.mentor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.mentor-card h3 {
+  color: #003366;
+}
+.mentor-card p {
+  color: #666;
+}
+
+/* Networking Opportunities */
+.networking-opportunities {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Networking Wall */
+.networking-post {
+  background-color: #e6f2ff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.networking-post strong {
+  color: #003366;
+}
+
+
+
+/* Mentor Card Styling */
+.mentor-card {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 4px 4px 10px #ccc, -4px -4px 10px #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mentor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 6px 6px 15px #bbb, -6px -6px 15px #fff;
+}
+
+.mentor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.mentor-card h3 {
+  color: #006d77;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.mentor-card p {
+  color: #555;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.mentor-card .btn-primary {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mentor-card .btn-primary:hover {
+  background-color: #005959;
+}
+
+/* Event Table Styling */
+.dataTables_wrapper {
+  margin: 20px;
+}
+
+table.dataTable {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Networking Wall */
+.networking-post {
+  background-color: #f0f8ff;
+  border-left: 4px solid #008080;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.networking-post strong {
+  color: #006d77;
+}
+
+/* Scheduling Modal */
+.modal-dialog {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  color: #006d77;
+  font-size: 18px;
+}
+
+.modal-footer button {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: #005959;
+}
+
+/* Buttons Styling */
+.btn-primary {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #005959;
+}
+
+/* Inputs */
+select, input {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ################### Hero Section #############*/
+
+
+
+
+/* Hero Section */
+.hero-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(120deg, #009688, #00796b);
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.btn-hero {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  color: #00796b;
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  transition: 0.3s;
+}
