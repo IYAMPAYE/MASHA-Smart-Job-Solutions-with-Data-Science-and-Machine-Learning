@@ -1,4 +1,11 @@
 # MASHA-Smart-Job-Solutions-with-Data-Science-and-Machine-Learning
+
+Find the Live  Project on this link : [ https://psz5gu-iyampaye-ribert.shinyapps.io/NISR/]
+
+
+
+
+
 MASHA: Smart Job Solutions with Data Science and Machine Learning
 MASHA is a platform designed to tackle youth unemployment in Rwanda using AI and machine learning to provide personalized job recommendations, career tools, and labor market insights. It matches users with job opportunities and equips them with resources to enhance their employability.
 
