@@ -26,6 +26,8 @@ library(stringr)
 library(lubridate)
 library(base64enc)
 library(reticulate)
+library(rsconnect)
+
 
 
 
@@ -36,7 +38,7 @@ interview_questions <- read.csv("interview_questions_dataset.csv")
 cleaned_jobs<- read.csv("cleaned_jobs1.csv")
 cleaned_jobs<- cleaned_jobs %>% distinct(actual_job_title, .keep_all = TRUE)
 employment_data<- read_xlsx("Distribution.xlsx")
-
+resources <- read.csv("Datasets/resources_dataset.csv")
 
 
 
@@ -77,6 +79,107 @@ ui <- shinyUI(
                                
                                
                       ), 
+                      tabPanel(
+                        "Youth Labour Dashboard",
+                        fluidPage(
+                          
+                          
+                          # Dashboard Title
+                          div(class = "dashboard-title", "Rwanda Youth Labour Force Dashboard"),
+                          
+                          # Cards for Key Metrics
+                          div(
+                            class = "card-row",
+                            div(class = "info-card", h3("Total Youth Population"), p(span("3,495,825"))),
+                            div(class = "info-card", h3("Employed Youth"), p(span("78.18%"))),
+                            div(class = "info-card", h3("Unemployed Youth"), p(span("20.8%"))),
+                            div(class = "info-card", h3("Outside Labour Force"), p(span("43.82%"))),
+                            div(class = "info-card", h3("In subsistence agriculture"), p(span("25.5%")))
+                            
+                          ),
+                          
+                          # Chart Layout
+                          div(
+                            class = "chart-row",
+                            div(class = "chart-container",
+                              
+                                h4("Distribution of Youth by Usual Economic Activity"),
+                                sidebarLayout(
+                                  sidebarPanel(
+                                selectInput("location", "Select Location:",
+                                            choices = c("All", "Kigali City", "Southern Province", 
+                                                        "Western Province", "Northern Province", 
+                                                        "Eastern Province")),
+                                radioButtons("gender", "Select Gender:",
+                                             choices = c("All", "Male", "Female"),
+                                             inline = TRUE)),
+                                mainPanel(
+                                echarts4rOutput("economic_activity_chart")
+                            ))),
+                            div(
+                              class = "chart-container",
+                              h4("Youth in Waged Work by Public and Private Sector"),
+                              sidebarLayout(
+                                sidebarPanel(
+                                  selectInput(
+                                    "age_group_waged",
+                                    "Select Age Group:",
+                                    choices = c("All", "16-20", "21-25", "26-30")
+                                  ),
+                                  radioButtons(
+                                    "gender_waged", 
+                                    "Select Gender:",
+                                    choices = c("All", "Male", "Female"),
+                                    inline = TRUE
+                                  )
+                                ),
+                                mainPanel(
+                                  echarts4rOutput("waged_work_pie_chart", height = "500px") 
+                                )
+                              )
+                            )
+                            ,
+                            div(
+                              class = "chart-container",
+                              h4("Main Usual Jobs of Youth"),
+                              # Location dropdown
+                              selectInput(
+                                inputId = "location_filter",
+                                label = "Select Location:",
+                                choices = c(
+                                  "All" = "All",
+                                  "Kigali City" = "Kigali City",
+                                  "Southern Province" = "Southern Province",
+                                  "Western Province" = "Western Province",
+                                  "Northern Province" = "Northern Province",
+                                  "Eastern Province" = "Eastern Province"
+                                ),
+                                selected = "All"
+                              ),
+                              # Gender radio buttons
+                              radioButtons(
+                                inputId = "gender_filter",
+                                label = "Select Gender:",
+                                choices = c("All" = "All", "Male" = "Male", "Female" = "Female"),
+                                selected = "All",
+                                inline = TRUE
+                              ),
+                              # Chart output
+                              echarts4rOutput("main_jobs_chart")
+                            )
+                            ,
+                            div(
+                              class = "chart-container",
+                              h4("Industry of Main Job - Heatmap"),
+                              plotlyOutput("bubble_chart")
+                            )
+                            
+                            
+                          )
+                        )
+                      )
+                      , 
+                      
                       
                       
                       
@@ -219,7 +322,7 @@ ui <- shinyUI(
                                   )
                                 )
                                 
-                      )
+                      ) 
                      
                       ,
                      
@@ -344,7 +447,7 @@ ui <- shinyUI(
                         ),
                         br(),
                         actionButton("start_interview_mode", "Start Selected Mode", class = "btn btn-primary"),
-                       
+                        
                       )
                     ),
                     
@@ -366,7 +469,7 @@ ui <- shinyUI(
                         ),
                         fluidRow(
                           column(12,
-                                 textOutput("question_output"),
+                                 textOutput("question_output_video"),
                                  br(),
                                  fluidRow(
                                    column(12, actionButton("startRecording", "Start Recording", class = "btn btn-primary")),
@@ -394,7 +497,7 @@ ui <- shinyUI(
                         
                         h3("Text-Only Interview Mode"),
                         fluidRow(
-                          column(12, textOutput("question_output"), br()),
+                          column(12, textOutput("question_output_text"), br()),
                           column(12, textAreaInput("text_answer", "Your Answer", "", width = "100%", height = "100px")),
                           column(12, actionButton("submit_text_answer", "Submit Answer", class = "btn btn-success")),
                           column(12, textOutput("text_feedback")),
@@ -407,6 +510,8 @@ ui <- shinyUI(
                     
                   )
          )
+         
+         
          
          
 
@@ -654,56 +759,49 @@ tabPanel(
         tags$h2("Resource Categories")
       ),
       fluidRow(
-        column(4, 
-               tags$div(
-                 class = "resource-card",
-                 tags$h3("Career Guidance"),
-                 tags$p("Explore job application tips, resume templates, and interview preparation resources."),
-                 actionButton("career_guidance", "Learn More", class = "btn-resource")
-               )
-        ),
-        column(4, 
-               tags$div(
-                 class = "resource-card",
-                 tags$h3("Funding Opportunities"),
-                 tags$p("Discover scholarships, grants, and other financial aid programs."),
-                 actionButton("funding_opportunities", "Explore Funding", class = "btn-resource")
-               )
-        ),
-        column(4, 
-               tags$div(
-                 class = "resource-card",
-                 tags$h3("Mental Health Support"),
-                 tags$p("Access counseling services and mental health awareness programs."),
-                 actionButton("mental_health_support", "Get Support", class = "btn-resource")
-               )
-        )
-      )
-    ),
-    tags$div(
-      class = "section tools-section",
-      tags$div(
-        class = "section-title",
-        tags$h2("Interactive Tools")
+        uiOutput("main_ui")
       ),
-      fluidRow(
-        column(6, 
-               tags$div(
-                 class = "tool-card",
-                 tags$h3("Resume Builder"),
-                 tags$p("Create a professional resume in minutes."),
-                 actionButton("resume_builder", "Build Resume", class = "btn-tool")
-               )
+      tags$div(
+        class = "section tools-section",
+        tags$div(
+          class = "section-title",
+          tags$h2("Interactive Tools")
         ),
-        column(6, 
-               tags$div(
-                 class = "tool-card",
-                 tags$h3("Skill Assessment"),
-                 tags$p("Identify your strengths and get recommendations for career paths."),
-                 actionButton("skill_assessment", "Take Assessment", class = "btn-tool")
-               )
+        fluidRow(
+          column(6,
+                 tags$div(
+                   class = "tool-card resume-builder-card",
+                   tags$img(
+                     src = "resume_builder_icon.jpg",
+                     alt = "Resume Builder",
+                     class = "tool-image"
+                   ),
+                   tags$h3(class = "tool-title", "Resume Builder"),
+                   tags$p(class = "tool-description", 
+                          "Create a professional resume with customizable templates and career-specific guidance."
+                   ),
+                   actionButton("resume_builder", "Build Resume", class = "btn-tool")
+                 )
+          ),
+          column(6,
+                 tags$div(
+                   class = "tool-card skill-assessment-card",
+                   tags$img(
+                     src = "skill_assessment_icon.jpg",
+                     alt = "Skill Assessment",
+                     class = "tool-image"
+                   ),
+                   tags$h3(class = "tool-title", "Skill Assessment"),
+                   tags$p(class = "tool-description", 
+                          "Assess your skills, identify gaps, and receive tailored career recommendations."
+                   ),
+                   actionButton("skill_assessment", "Take Assessment", class = "btn-tool")
+                 )
+          )
         )
       )
+      
+      
     ),
     tags$div(
       class = "section contact-support-section",
@@ -716,9 +814,10 @@ tabPanel(
         textInput("user_name", "Your Name"),
         textInput("user_email", "Your Email"),
         textAreaInput("user_message", "Message", ""),
-        actionButton("send_message", "Send Message")
+        actionButton("send_message", "Send Message", class = "btn")
       )
     )
+    
   )
 )
 , 
@@ -842,7 +941,19 @@ tags$footer(
 )
 
 
+
+
+
+
+
+
+
+
+
+
 server<- function(input, output, session){
+
+  
   
   # Render the line chart based on selected indicator
   # Create the line chart
@@ -1039,7 +1150,11 @@ server<- function(input, output, session){
     question_bank(questions)
     current_question_index(1)
     
-    output$question_output <- renderText({
+    output$question_output_text <- renderText({
+      question_bank()[[current_question_index()]]
+    })
+    
+    output$question_output_video <- renderText({
       question_bank()[[current_question_index()]]
     })
   })
@@ -1101,6 +1216,9 @@ server<- function(input, output, session){
       })
     }
   })
+  
+  
+  
   
   # Process submitted text answer in text-only mode and generate feedback
   observeEvent(input$submit_text_answer, {
@@ -1253,7 +1371,7 @@ server<- function(input, output, session){
             name = "Location") %>%
       e_tooltip(trigger = "item", formatter = "{b}: {c} ({d}%)") %>%
       e_title("Jobs by Location", left = "center") %>%
-      e_legend(orient = "horizontal", top = "bottom") %>%
+      e_legend(FALSE) %>%
       e_theme("infographic") %>%
       e_animation(duration = 1200, easing = "cubicOut")
   })
@@ -1455,63 +1573,788 @@ output$company_chart <- renderEcharts4r({
   
   ######## Skills and Resources ################################################
   
-  
-  observeEvent(input$career_guidance, {
-    showModal(
-      modalDialog(
-        title = "Career Guidance",
-        "Here, you can find tailored tips for job applications, downloadable resume templates, and interview preparation guides.",
-        footer = modalButton("Close")
+  # Default UI
+  output$main_ui <- renderUI({
+    fluidRow(
+      column(
+        4,
+        tags$div(
+          class = "resource-card",
+          tags$img(
+            src = "Guidance.jpg",
+            alt = "Career Guidance",
+            class = "resource-image"
+          ),
+          tags$h3("Career Guidance"),
+          tags$p("Explore job application tips, resume templates, and interview preparation resources."),
+          actionButton("career_guidance", "Learn More", class = "btn-resource")
+        )
+      ),
+      column(
+        4,
+        tags$div(
+          class = "resource-card",
+          tags$img(
+            src = "Opportunities.jpg",
+            alt = "Funding Opportunities",
+            class = "resource-image"
+          ),
+          tags$h3("Funding Opportunities"),
+          tags$p("Discover scholarships, grants, and other financial aid programs."),
+          actionButton("funding_opportunities", "Explore Funding", class = "btn-resource")
+        )
+      ),
+      column(
+        4,
+        tags$div(
+          class = "resource-card mental-health-card",
+          tags$img(
+            src = "mental_health_icon.jpg",
+            alt = "Mental Health Support",
+            class = "resource-image"
+          ),
+          tags$h3(class = "resource-title", "Mental Health Support"),
+          tags$p(class = "resource-description", 
+                 "Explore counseling services, meditation guides, and stress management resources."
+          ),
+          tags$div(
+            class = "feature-buttons",
+            actionButton("mental_health_support", "Get Support", class = "btn-resource"),
+            actionButton("mental_health_exercise", "Relaxation Exercises", class = "btn-resource"),
+            actionButton("mental_health_hotline", "Helplines", class = "btn-resource")
+          )
+        )
       )
+      
     )
   })
+  
+  # Dataset for Career Guidance
+  dataset <- read.csv("Datasets/career_guidance_resources.csv")
+  
+  # Navigate to the new page
+  observeEvent(input$career_guidance, {
+    output$main_ui <- renderUI({
+      fluidPage(
+        titlePanel("Career Guidance Resources"),
+        
+        # Filter Section
+        div(
+          class = "filter-section",
+          fluidRow(
+            column(
+              4,
+              selectInput("category_filter", "Filter by Category:",
+                          choices = c("All", unique(dataset$Category)), selected = "All")
+            ),
+            column(
+              4,
+              textInput("search_term", "Search Resources:", placeholder = "Enter keyword...")
+            )
+          )
+        ),
+        
+        # Data Section
+        div(
+          class = "data-section",
+          DTOutput("career_guidance_table")
+        ),
+        
+        # Additional Section
+        fluidRow(
+          column(
+            6,
+            div(
+              class = "data-section",
+              tags$h4("Popular Resources"),
+              tags$ul(
+                tags$li("Top Resume Builder Tools"),
+                tags$li("LinkedIn Profile Optimization"),
+                tags$li("Free Online Courses"),
+                tags$li("Networking for Beginners")
+              )
+            )
+          ),
+          column(
+            6,
+            div(
+              class = "data-section",
+              tags$h4("Top Tips"),
+              tags$p("1. Keep your resume concise and tailored to the job."),
+              tags$p("2. Practice behavioral interview questions."),
+              tags$p("3. Optimize your LinkedIn profile to match your career goals.")
+            )
+          )
+        ),
+        
+        # Back Button
+        actionButton("go_back", "Go Back", class = "btn-back")
+      )
+    })
+  })
+  
+  # Filter and render table for Career Guidance
+  # Render the filtered dataset table with clickable links
+  output$career_guidance_table <- renderDT({
+    filtered_data <- dataset
+    if (input$category_filter != "All") {
+      filtered_data <- filtered_data[filtered_data$Category == input$category_filter, ]
+    }
+    if (!is.null(input$search_term) && input$search_term != "") {
+      filtered_data <- filtered_data[grepl(input$search_term, filtered_data$Resource_Name, ignore.case = TRUE), ]
+    }
+    datatable(
+      filtered_data, 
+      escape = FALSE, # Allow rendering HTML
+      options = list(pageLength = 10)
+    )
+  })
+  
+  
+  
+  
   
   observeEvent(input$funding_opportunities, {
-    showModal(
-      modalDialog(
-        title = "Funding Opportunities",
-        "We’ve curated a list of scholarships, grants, and other financial aid opportunities available to Rwandan youth.",
-        footer = modalButton("Close")
+    # Load the dataset
+    funding_data <- read.csv("funding_data.csv", stringsAsFactors = FALSE)
+    funding_data$Deadline <- as.Date(funding_data$Deadline, format = "%Y-%m-%d")
+    
+    # UI for Funding Opportunities
+    output$main_ui <- renderUI({
+      fluidPage(
+        titlePanel("Funding Opportunities"),
+        sidebarLayout(
+          sidebarPanel(
+            selectInput(
+              "funding_type", 
+              "Select Type:", 
+              choices = c("All", unique(funding_data$Type)), 
+              selected = "All"
+            ),
+            sliderInput(
+              "deadline_filter", 
+              "Days to Deadline:", 
+              min = 0, max = 365, value = 365
+            ),
+            textInput(
+              "search_keyword", 
+              "Search by Keyword:", 
+              placeholder = "e.g., Women, Technology, USA"
+            ),
+            actionButton("apply_filters", "Apply Filters", class = "btn-apply"),
+            actionButton("reset_filters", "Reset Filters", class = "btn-reset")
+          ),
+          mainPanel(
+            tags$div(
+              id = "funding_results",
+              class = "funding-results",
+              uiOutput("funding_cards")
+            )
+          )
+        ),
+        actionButton("go_back", "Go Back", class = "btn-back")
       )
+    })
+    
+    # Reactive dataset for filtering
+    filtered_data <- reactive({
+      df <- funding_data
+      
+      # Apply funding type filter
+      if (input$funding_type != "All") {
+        df <- df[df$Type == input$funding_type, ]
+      }
+      
+      # Apply keyword filter
+      if (!is.null(input$search_keyword) && input$search_keyword != "") {
+        df <- df[grepl(input$search_keyword, df$Title, ignore.case = TRUE), ]
+      }
+      
+      # Apply deadline filter
+      max_deadline <- Sys.Date() + input$deadline_filter
+      df <- df[df$Deadline <= max_deadline, ]
+      
+      df
+    })
+    
+    # Generate Funding Cards
+    output$funding_cards <- renderUI({
+      funding_list <- filtered_data()
+      
+      if (nrow(funding_list) == 0) {
+        tags$p("No funding opportunities found. Try adjusting your filters.")
+      } else {
+        lapply(seq_len(nrow(funding_list)), function(i) {
+          tags$div(
+            class = "funding-card",
+            tags$h4(funding_list[i, "Title"]),
+            tags$p(funding_list[i, "Description"]),
+            tags$p(paste("Deadline:", funding_list[i, "Deadline"])),
+            tags$a(
+              href = funding_list[i, "Link"], 
+              "Learn More", 
+              target = "_blank", 
+              class = "btn-learn-more"
+            )
+          )
+        })
+      }
+    })
+    
+    # Reset Filters
+    observeEvent(input$reset_filters, {
+      updateSelectInput(session, "funding_type", selected = "All")
+      updateSliderInput(session, "deadline_filter", value = 90)
+      updateTextInput(session, "search_keyword", value = "")
+    })
+  })
+  
+  
+  
+  
+  
+  # Back button logic
+  observeEvent(input$go_back, {
+    output$main_ui <- renderUI({
+      fluidRow(
+        column(
+          4,
+          tags$div(
+            class = "resource-card",
+            tags$img(
+              src = "Guidance.jpg",
+              alt = "Career Guidance",
+              class = "resource-image"
+            ),
+            tags$h3("Career Guidance"),
+            tags$p("Explore job application tips, resume templates, and interview preparation resources."),
+            actionButton("career_guidance", "Learn More", class = "btn-resource")
+          )
+        ),
+        column(
+          4,
+          tags$div(
+            class = "resource-card advanced-card",
+            tags$img(
+              src = "Opportunities.jpg",
+              alt = "Funding Opportunities",
+              class = "resource-image"
+            ),
+            tags$h3(class = "resource-title", "Funding Opportunities"),
+            tags$p(class = "resource-description", 
+                   "Find scholarships, grants, and loans to fund your education or projects."
+            ),
+            actionButton("funding_opportunities", "Explore Now", class = "btn-resource")
+          )
+        )
+        ,
+        column(
+          4,
+          tags$div(
+            class = "resource-card mental-health-card",
+            tags$img(
+              src = "mental_health_icon.jpg",
+              alt = "Mental Health Support",
+              class = "resource-image"
+            ),
+            tags$h3(class = "resource-title", "Mental Health Support"),
+            tags$p(class = "resource-description", 
+                   "Explore counseling services, meditation guides, and stress management resources."
+            ),
+            tags$div(
+              class = "feature-buttons",
+              actionButton("mental_health_support", "Get Support", class = "btn-resource"),
+              actionButton("mental_health_exercise", "Relaxation Exercises", class = "btn-resource"),
+              actionButton("mental_health_hotline", "Helplines", class = "btn-resource")
+            )
+          )
+        )
+      )
+    })
+  })
+  
+  
+  
+  
+  
+  
+  
+  #### Rwanda Youth Dashboad 
+  
+  
+  # Dataset
+  data_joob<- reactive({
+    tibble::tibble(
+      Activity = c("Worker", "Seeking work", "Student", "Domestic", "Disability", "Other"),
+      `Kigali City Male` = c(70.4, 5.5, 21.7, 1.8, 0.3, 0.4),
+      `Kigali City Female` = c(66.5, 11.7, 15.9, 4.1, 1, 0.7),
+      `Southern Province Male` = c(76, 1, 18, 2.6, 1.4, 1),
+      `Southern Province Female` = c(78, 2.3, 14.7, 3.5, 0.8, 0.7),
+      `Western Province Male` = c(78.1, 1.5, 16.8, 1.5, 0.9, 1.2),
+      `Western Province Female` = c(81.9, 1.5, 12.1, 2.4, 1.3, 0.8),
+      `Northern Province Male` = c(78.2, 0.9, 17.5, 1.2, 1.1, 1.2),
+      `Northern Province Female` = c(81.2, 1.9, 14.6, 1.4, 0.6, 0.3),
+      `Eastern Province Male` = c(80.5, 0.7, 15.2, 1.9, 1.2, 0.5),
+      `Eastern Province Female` = c(79.8, 0.9, 14.9, 3, 1.1, 0.3),
+      `Total Male` = c(76.8, 1.9, 17.7, 1.8, 1, 0.8),
+      `Total Female` = c(77.6, 3.5, 14.4, 2.9, 1, 0.6),
+      All = c(77.2, 2.7, 16, 2.4, 1, 0.7)
     )
   })
   
+  # Filtered data based on inputs
+  filtered_data <- reactive({
+    df <- data_joob()
+    
+    # Filter by location
+    if (input$location != "All") {
+      male_col <- paste(input$location, "Male")
+      female_col <- paste(input$location, "Female")
+      all_col <- "All"
+      
+      if (input$gender == "Male") {
+        df <- df %>%
+          select(Activity, !!sym(male_col)) %>%
+          rename(Value = !!sym(male_col))
+      } else if (input$gender == "Female") {
+        df <- df %>%
+          select(Activity, !!sym(female_col)) %>%
+          rename(Value = !!sym(female_col))
+      } else {
+        df <- df %>%
+          mutate(Value = rowMeans(select(., !!sym(male_col), !!sym(female_col)), na.rm = TRUE)) %>%
+          select(Activity, Value)
+      }
+    } else {
+      # For "All" location
+      if (input$gender == "Male") {
+        df <- df %>%
+          select(Activity, `Total Male`) %>%
+          rename(Value = `Total Male`)
+      } else if (input$gender == "Female") {
+        df <- df %>%
+          select(Activity, `Total Female`) %>%
+          rename(Value = `Total Female`)
+      } else {
+        df <- df %>%
+          select(Activity, All) %>%
+          rename(Value = All)
+      }
+    }
+    
+    df
+  })
+  
+  # Render chart
+  output$economic_activity_chart <- renderEcharts4r({
+    filtered_data() %>%
+      e_charts(Activity) %>%
+      e_bar(Value, name = input$gender) %>%
+      e_tooltip() %>%
+      e_y_axis(name = "Percentage") %>%
+      e_x_axis(name = "Activity")
+  })
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  # Dataset
+  data1 <- reactive({
+    tibble::tibble(
+      `Institutional sector` = c("Public", "Private", "NGO", "Others"),
+      `16-20 Male` = c(0.3, 99.6, 0.2, 0),
+      `16-20 Female` = c(0.3, 99.5, 0.2, 0),
+      `21-25 Male` = c(1.3, 98.4, 0.2, 0.1),
+      `21-25 Female` = c(0.9, 98.7, 0.4, 0),
+      `26-30 Male` = c(4.5, 95, 0.4, 0.1),
+      `26-30 Female` = c(2.9, 96.7, 0.3, 0.1),
+      `Total Male` = c(2.4, 97.2, 0.3, 0.1),
+      `Total Female` = c(1.7, 98, 0.3, 0),
+      Total = c(2, 97.6, 0.3, 0)
+    )
+  })
+  
+  # Filter data based on input
+  filtered_data_waged <- reactive({
+    df1 <- data1()
+    
+    if (input$age_group_waged == "All") {
+      if (input$gender_waged == "Male") {
+        df1 <- df1 %>%
+          select(`Institutional sector`, `Total Male`) %>%
+          rename(Value = `Total Male`)
+      } else if (input$gender_waged == "Female") {
+        df1 <- df1 %>%
+          select(`Institutional sector`, `Total Female`) %>%
+          rename(Value = `Total Female`)
+      } else {
+        df1 <- df1 %>%
+          select(`Institutional sector`, Total) %>%
+          rename(Value = Total)
+      }
+    } else {
+      age_col <- paste(input$age_group_waged, input$gender_waged)
+      if (input$gender_waged != "All") {
+        df1 <- df1 %>%
+          select(`Institutional sector`, !!sym(age_col)) %>%
+          rename(Value = !!sym(age_col))
+      } else {
+        male_col <- paste(input$age_group_waged, "Male")
+        female_col <- paste(input$age_group_waged, "Female")
+        df1 <- df1 %>%
+          mutate(Value = rowMeans(select(., !!sym(male_col), !!sym(female_col)), na.rm = TRUE)) %>%
+          select(`Institutional sector`, Value)
+      }
+    }
+    df1
+  })
+  
+  # Render pie chart
+  output$waged_work_pie_chart <- renderEcharts4r({
+    filtered_data_waged() %>%
+      e_charts(`Institutional sector`) %>%
+      e_pie(Value, radius = c("40%", "70%")) %>%
+      e_tooltip(formatter = htmlwidgets::JS("
+        function(params) {
+          return params.name + ': ' + params.value + '%';
+        }
+      ")) %>%
+      e_legend(orient = "vertical", left = "left") %>%
+      e_color(c("#2ecc71", "#3498db", "#e74c3c", "#f1c40f"))
+  })
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  # Dataset
+  main_jobs_data <- reactive({
+    tibble::tibble(
+      `Work Status` = c(
+        "Wage Farm", "Wage Non farm", "Independent farmer",
+        "Independent non farmer", "Unpaid non farmer"
+      ),
+      `Kigali City Male` = c(2.1, 77.3, 3.9, 15.7, 1.1),
+      `Kigali City Female` = c(7.1, 59.8, 9.8, 18, 5.3),
+      `Southern Province Male` = c(13.8, 31.8, 46.1, 7.8, 0.5),
+      `Southern Province Female` = c(12.8, 14.3, 66.5, 5.2, 1.2),
+      `Western Province Male` = c(19.6, 30.5, 40.6, 8.4, 0.8),
+      `Western Province Female` = c(22.3, 10.3, 56.4, 9.1, 2),
+      `Northern Province Male` = c(16.9, 29.8, 43.8, 9, 0.6),
+      `Northern Province Female` = c(18.6, 8.3, 64.8, 7.4, 0.9),
+      `Eastern Province Male` = c(19.2, 29.4, 40.3, 10.7, 0.5),
+      `Eastern Province Female` = c(24.1, 9.7, 60, 4.9, 1.4),
+      `Total Male` = c(14.8, 38.5, 35.8, 10.2, 0.7),
+      `Total Female` = c(17.7, 18.6, 53.2, 8.4, 2),
+      `All` = c(16.3, 28.1, 45, 9.3, 1.4)
+    )
+  })
+  
+  # Filtered data
+  filtered_main_jobs_data <- reactive({
+    df <- main_jobs_data()
+    
+    location <- input$location_filter
+    gender <- input$gender_filter
+    
+    # Filter by location
+    if (location != "All") {
+      df <- df %>%
+        select(`Work Status`, starts_with(location))
+    } else {
+      df <- df %>%
+        select(`Work Status`, starts_with("Total"))
+    }
+    
+    # Filter by gender
+    if (gender != "All") {
+      col_name <- paste(location, gender, sep = " ")
+      if (location == "All") {
+        col_name <- paste("Total", gender)
+      }
+      df <- df %>%
+        select(`Work Status`, !!sym(col_name)) %>%
+        rename(Value = !!sym(col_name))
+    } else {
+      if (location == "All") {
+        df <- df %>%
+          mutate(Value = rowMeans(select(., `Total Male`, `Total Female`), na.rm = TRUE)) %>%
+          select(`Work Status`, Value)
+      } else {
+        male_col <- paste(location, "Male")
+        female_col <- paste(location, "Female")
+        df <- df %>%
+          mutate(Value = rowMeans(select(., !!sym(male_col), !!sym(female_col)), na.rm = TRUE)) %>%
+          select(`Work Status`, Value)
+      }
+    }
+    df
+  })
+  
+  # Render chart
+  output$main_jobs_chart <- renderEcharts4r({
+    filtered_main_jobs_data() %>%
+      e_charts(`Work Status`) %>%
+      e_bar(Value) %>%
+      e_tooltip(formatter = htmlwidgets::JS("
+        function(params) {
+          return params.name + ': ' + params.value + '%';
+        }
+      ")) %>%
+      e_color(c("#3498db", "#e74c3c", "#2ecc71", "#f1c40f", "#9b59b6"))
+  })
+  
+  
+  
+  
+  
+  
+  
+  # Sample data
+  data2 <- data.frame(
+    `sector` = c(
+      "A: Agriculture, Forestry, and Fishing",
+      "B: Mining and Quarrying",
+      "C: Manufacturing",
+      "D: Electricity, Gas and Air Conditioning Supply",
+      "E: Water Supply, Gas, and Remediation Services",
+      "F: Construction",
+      "G: Wholesale and Retail Trade, Repair of Motor Vehicles and Motorcycles",
+      "H: Transportation and Storage",
+      "I: Accommodation and Food Service Activities",
+      "J: Information and Communication",
+      "K: Financial and Insurance Activities",
+      "L: Real Estate Activities",
+      "M: Professional, Scientific, and Technical Activities",
+      "N: Administrative and Support Service Activities",
+      "O: Public Administration and Defence, Compulsory Social Security",
+      "P: Education",
+      "Q: Human Health and Social Work Activities",
+      "R: Arts, Entertainment, and Recreation",
+      "S: Other Service Activities",
+      "T: Activities of Households as Employers, Undifferentiated Goods- and Service-Producing Activities",
+      "U: Activities of Extraterritorial Organisations and Bodies"
+    ),
+    percentage = c(
+      62.2, 1.1, 2.2, 0.2, 0.1, 5.1, 10.3, 3.1, 0.9, 0.3, 0.3, 0, 0.4, 0.5, 0.6, 1.5, 0.5, 0.5, 1.4, 8.7, 0.2
+    )
+  )
+  
+  
+  output$bubble_chart <- renderPlotly({
+    plot_ly(
+      data2,
+      x = ~sector,
+      y = ~percentage,
+      type = 'scatter',
+      mode = 'markers',
+      marker = list(
+        size = ~percentage * 2, # Bubble size proportional to percentage
+        color = ~percentage, # Dynamic coloring based on percentage
+        colorscale = 'Viridis',
+        showscale = TRUE,
+        line = list(width = 5, color = "#000")
+      ),
+      text = ~paste("Sector:", sector, "<br>Percentage:", percentage, "%")
+    ) %>%
+      layout(
+        xaxis = list(title = "Economic Sectors", tickangle = 25),
+        yaxis = list(title = "Percentage"),
+        margin = list(b = 10),
+        showlegend = FALSE
+      )
+  })
+
+  
+  
+  
+  
+  # Navigate to Mental Health Support Page
   observeEvent(input$mental_health_support, {
-    showModal(
-      modalDialog(
-        title = "Mental Health Support",
-        "Reach out to trusted counselors or participate in mental health workshops.",
-        footer = modalButton("Close")
+    output$main_ui <- renderUI({
+      fluidPage(
+        titlePanel("Mental Health Support"),
+        sidebarLayout(
+          sidebarPanel(
+            selectInput("support_type", "Select Service:", 
+                        choices = c("Counseling", "Meditation", "Stress Management", "Workshops"),
+                        selected = "Counseling"),
+            textInput("search_support", "Search by Keyword:", placeholder = "e.g., Anxiety"),
+            actionButton("apply_support_filters", "Apply Filters", class = "btn-apply")
+          ),
+          mainPanel(
+            tags$h3("Available Services"),
+            DT::dataTableOutput("mental_health_services"),
+            tags$p("Explore resources that fit your needs or contact a professional.")
+          )
+        ),
+        actionButton("go_back", "Go Back", class = "btn-back")
       )
-    )
+    })
   })
   
+  # Dynamic Relaxation Exercises Page
+  observeEvent(input$mental_health_exercise, {
+    output$main_ui <- renderUI({
+      fluidPage(
+        titlePanel("Relaxation Exercises"),
+        tags$p("Follow guided relaxation exercises to ease your mind."),
+        tags$ul(
+          tags$li(tags$a(href = "https://www.headspace.com/meditation", "Meditation Guides", target = "_blank")),
+          tags$li(tags$a(href = "https://www.calm.com/", "Calm App for Relaxation", target = "_blank")),
+          tags$li(tags$a(href = "https://www.mindful.org/", "Mindful Practices", target = "_blank"))
+        ),
+        actionButton("go_back", "Go Back", class = "btn-back")
+      )
+    })
+  })
+  
+  # Helpline Resources Page
+  observeEvent(input$mental_health_hotline, {
+    output$main_ui <- renderUI({
+      fluidPage(
+        titlePanel("Helplines and Hotlines"),
+        tags$ul(
+          tags$li(tags$a(href = "https://www.samaritans.org/", "Samaritans - 24/7 Support", target = "_blank")),
+          tags$li(tags$a(href = "https://www.nami.org/help", "NAMI Helpline", target = "_blank")),
+          tags$li(tags$a(href = "https://www.mentalhealth.org.uk/getting-help", "UK Mental Health Foundation", target = "_blank")),
+          tags$li(tags$a(href = "https://www.crisistextline.org/", "Crisis Text Line", target = "_blank"))
+        ),
+        tags$p("Contact these resources for immediate assistance."),
+        actionButton("go_back", "Go Back", class = "btn-back")
+      )
+    })
+  })
+  
+  # Load and Display Mental Health Services Dataset
+  observeEvent(input$apply_support_filters, {
+    output$mental_health_services <- DT::renderDataTable({
+      # Filter dataset based on user input
+      services <- mental_health_data
+      if (input$support_type != "") {
+        services <- services[services$Type == input$support_type, ]
+      }
+      if (input$search_support != "") {
+        services <- services[grepl(input$search_support, services$Description, ignore.case = TRUE), ]
+      }
+      services
+    }, options = list(pageLength = 10, autoWidth = TRUE))
+  })
+  
+  
+  
+  
+  # Resume Builder Popup
   observeEvent(input$resume_builder, {
-    showModal(
-      modalDialog(
-        title = "Resume Builder",
-        "Our intuitive resume builder guides you step-by-step to create a professional CV.",
-        footer = modalButton("Close")
-      )
-    )
+    showModal(modalDialog(
+      title = "Resume Builder",
+      fluidPage(
+        sidebarLayout(
+          sidebarPanel(
+            textInput("full_name", "Full Name:", placeholder = "Enter your name"),
+            textInput("job_title", "Job Title:", placeholder = "e.g., Software Engineer"),
+            textInput("contact_info", "Contact Information:", placeholder = "e.g., email, phone"),
+            fileInput("resume_photo", "Upload Profile Photo:", accept = c("image/png", "image/jpeg")),
+            selectInput("resume_template", "Select Template:",
+                        choices = c("Classic", "Modern", "Creative"),
+                        selected = "Classic"),
+            actionButton("generate_resume", "Generate Resume", class = "btn-tool")
+          ),
+          mainPanel(
+            tags$h3("Preview Resume"),
+            uiOutput("resume_preview"),
+            downloadButton("download_resume", "Download Resume", class = "btn-tool")
+          )
+        )
+      ),
+      footer = modalButton("Close")
+    ))
   })
   
+  # Skill Assessment Popup
   observeEvent(input$skill_assessment, {
-    showModal(
-      modalDialog(
-        title = "Skill Assessment",
-        "Take a quick skill assessment to understand your strengths and receive career path suggestions.",
-        footer = modalButton("Close")
+    showModal(modalDialog(
+      title = "Skill Assessment",
+      fluidPage(
+        sidebarLayout(
+          sidebarPanel(
+            selectInput("career_field", "Career Field:", 
+                        choices = c("Technology", "Finance", "Healthcare", "Education", "Engineering"),
+                        selected = "Technology"),
+            checkboxGroupInput("skills", "Select Your Skills:",
+                               choices = c("Problem Solving", "Teamwork", "Leadership", "Technical Knowledge", "Creativity")),
+            actionButton("submit_assessment", "Submit Assessment", class = "btn-tool")
+          ),
+          mainPanel(
+            tags$h3("Assessment Results"),
+            textOutput("assessment_results"),
+            tags$p("Based on your skills, here are tailored recommendations:"),
+            uiOutput("career_recommendations")
+          )
+        )
+      ),
+      footer = modalButton("Close")
+    ))
+  })
+  
+  # Resume Generation Logic
+  observeEvent(input$generate_resume, {
+    output$resume_preview <- renderUI({
+      tags$div(
+        tags$h3(input$full_name),
+        tags$p(input$job_title),
+        tags$p(input$contact_info),
+        if (!is.null(input$resume_photo)) {
+          tags$img(src = input$resume_photo$datapath, alt = "Profile Photo", class = "resume-photo")
+        }
       )
+    })
+    output$download_resume <- downloadHandler(
+      filename = function() {
+        paste(input$full_name, "-Resume.pdf", sep = "")
+      },
+      content = function(file) {
+        # Placeholder: Use an R Markdown template to generate the resume as a PDF
+      }
     )
   })
   
-  observeEvent(input$send_message, {
-    showNotification(
-      paste("Thank you,", input$user_name, "for reaching out! We'll get back to you shortly."),
-      type = "message"
-    )
+  # Skill Assessment Logic
+  observeEvent(input$submit_assessment, {
+    output$assessment_results <- renderText({
+      paste("Skills Selected:", paste(input$skills, collapse = ", "))
+    })
+    output$career_recommendations <- renderUI({
+      tags$ul(
+        tags$li("Recommended Career Path: Data Analyst"),
+        tags$li("Suggested Courses: Data Visualization, Machine Learning"),
+        tags$li(tags$a(href = "https://example.com/data-analyst", "Learn More", target = "_blank"))
+      )
+    })
   })
+  
+  
   
 }
 
