@@ -1,0 +1,501 @@
+resource_id,name,description,category,subcategory,tags,relevance_score
+1,Skill Assessment Resource 1,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",4.67
+2,Fitness Programs Resource 2,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",1.31
+3,Investments Resource 3,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",4.73
+4,Gadgets Resource 4,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",1.85
+5,Resume Building Resource 5,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",0.55
+6,Investments Resource 6,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",2.98
+7,Diet Plans Resource 7,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",2.74
+8,Coding Bootcamps Resource 8,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",3.99
+9,Scholarships Resource 9,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.89
+10,Investments Resource 10,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",3.61
+11,Mental Health Resource 11,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.61
+12,Investments Resource 12,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",1.58
+13,Budgeting Resource 13,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",1.06
+14,Tech News Resource 14,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",3.92
+15,Tech News Resource 15,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",2.33
+16,Mental Health Resource 16,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.38
+17,Investments Resource 17,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",1.65
+18,Workshops Resource 18,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",3.75
+19,Resume Building Resource 19,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",3.07
+20,Scholarships Resource 20,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",4.61
+21,Resume Building Resource 21,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",0.81
+22,Online Courses Resource 22,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.95
+23,Investments Resource 23,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",3.52
+24,Scholarships Resource 24,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.96
+25,Tech News Resource 25,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",2.42
+26,Resume Building Resource 26,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.44
+27,Fitness Programs Resource 27,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.16
+28,Budgeting Resource 28,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.49
+29,Budgeting Resource 29,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.35
+30,Gadgets Resource 30,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",2.07
+31,Job Search Resource 31,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",3.24
+32,Tech News Resource 32,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",1.3
+33,Budgeting Resource 33,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",4.95
+34,Online Courses Resource 34,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.6
+35,Savings Plans Resource 35,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",4.28
+36,Mental Health Resource 36,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",1.24
+37,Mental Health Resource 37,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",4.15
+38,Savings Plans Resource 38,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",1.79
+39,Mental Health Resource 39,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",2.75
+40,Resume Building Resource 40,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.57
+41,Workshops Resource 41,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",1.0
+42,Fitness Programs Resource 42,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.17
+43,Tech News Resource 43,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",4.85
+44,Tech News Resource 44,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",0.74
+45,Scholarships Resource 45,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",2.37
+46,Tech News Resource 46,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",3.03
+47,Job Search Resource 47,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",1.03
+48,Scholarships Resource 48,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.34
+49,Workshops Resource 49,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",0.96
+50,Skill Assessment Resource 50,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",3.89
+51,Skill Assessment Resource 51,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",1.27
+52,Savings Plans Resource 52,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",3.89
+53,Coding Bootcamps Resource 53,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",1.4
+54,Investments Resource 54,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",0.57
+55,Job Search Resource 55,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",1.26
+56,Resume Building Resource 56,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",0.6
+57,Online Courses Resource 57,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.73
+58,Diet Plans Resource 58,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",2.67
+59,Investments Resource 59,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",0.65
+60,Mental Health Resource 60,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.67
+61,Fitness Programs Resource 61,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",0.88
+62,Tech News Resource 62,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",0.89
+63,Fitness Programs Resource 63,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",3.42
+64,Workshops Resource 64,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.15
+65,Gadgets Resource 65,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",2.55
+66,Online Courses Resource 66,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",3.3
+67,Skill Assessment Resource 67,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",4.78
+68,Coding Bootcamps Resource 68,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",2.74
+69,Scholarships Resource 69,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",3.4
+70,Online Courses Resource 70,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",2.17
+71,Gadgets Resource 71,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",3.15
+72,Mental Health Resource 72,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.3
+73,Savings Plans Resource 73,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.11
+74,Investments Resource 74,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",2.99
+75,Gadgets Resource 75,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",3.44
+76,Workshops Resource 76,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",3.44
+77,Investments Resource 77,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",3.76
+78,Resume Building Resource 78,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",3.29
+79,Online Courses Resource 79,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.75
+80,Mental Health Resource 80,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",4.79
+81,Budgeting Resource 81,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.55
+82,Scholarships Resource 82,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",0.81
+83,Skill Assessment Resource 83,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",4.16
+84,Scholarships Resource 84,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",2.76
+85,Scholarships Resource 85,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",3.06
+86,Mental Health Resource 86,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.81
+87,Fitness Programs Resource 87,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.95
+88,Gadgets Resource 88,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",0.88
+89,Budgeting Resource 89,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",0.86
+90,Gadgets Resource 90,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",4.52
+91,Investments Resource 91,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",0.8
+92,Mental Health Resource 92,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",4.44
+93,Fitness Programs Resource 93,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",3.73
+94,Job Search Resource 94,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",3.15
+95,Diet Plans Resource 95,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",1.06
+96,Fitness Programs Resource 96,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",2.42
+97,Workshops Resource 97,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",1.81
+98,Job Search Resource 98,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",3.55
+99,Mental Health Resource 99,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",1.07
+100,Job Search Resource 100,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",4.84
+101,Savings Plans Resource 101,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.27
+102,Gadgets Resource 102,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",4.53
+103,Fitness Programs Resource 103,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",1.42
+104,Fitness Programs Resource 104,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",3.55
+105,Mental Health Resource 105,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",1.25
+106,Workshops Resource 106,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.61
+107,Skill Assessment Resource 107,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",0.96
+108,Workshops Resource 108,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",2.87
+109,Scholarships Resource 109,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",2.21
+110,Investments Resource 110,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",0.55
+111,Coding Bootcamps Resource 111,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",3.03
+112,Mental Health Resource 112,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",4.29
+113,Resume Building Resource 113,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",4.28
+114,Workshops Resource 114,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",0.99
+115,Diet Plans Resource 115,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",1.05
+116,Skill Assessment Resource 116,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",2.76
+117,Job Search Resource 117,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",0.91
+118,Tech News Resource 118,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",4.12
+119,Resume Building Resource 119,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.85
+120,Resume Building Resource 120,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",2.16
+121,Savings Plans Resource 121,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",3.58
+122,Gadgets Resource 122,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",2.48
+123,Diet Plans Resource 123,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",4.68
+124,Budgeting Resource 124,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",2.53
+125,Diet Plans Resource 125,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",1.43
+126,Fitness Programs Resource 126,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",1.33
+127,Mental Health Resource 127,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",2.41
+128,Job Search Resource 128,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",2.22
+129,Budgeting Resource 129,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",4.93
+130,Skill Assessment Resource 130,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",3.77
+131,Mental Health Resource 131,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.18
+132,Scholarships Resource 132,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",0.67
+133,Skill Assessment Resource 133,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",1.68
+134,Budgeting Resource 134,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.28
+135,Tech News Resource 135,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",4.46
+136,Workshops Resource 136,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.78
+137,Coding Bootcamps Resource 137,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",2.69
+138,Investments Resource 138,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",3.99
+139,Diet Plans Resource 139,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",4.63
+140,Workshops Resource 140,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.61
+141,Online Courses Resource 141,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",1.73
+142,Tech News Resource 142,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",3.92
+143,Online Courses Resource 143,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",0.61
+144,Tech News Resource 144,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",2.29
+145,Resume Building Resource 145,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",2.9
+146,Budgeting Resource 146,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",1.59
+147,Budgeting Resource 147,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",0.53
+148,Coding Bootcamps Resource 148,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",3.34
+149,Diet Plans Resource 149,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",4.18
+150,Tech News Resource 150,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",4.27
+151,Online Courses Resource 151,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",1.23
+152,Skill Assessment Resource 152,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",2.66
+153,Workshops Resource 153,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",3.32
+154,Fitness Programs Resource 154,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",2.13
+155,Savings Plans Resource 155,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",4.2
+156,Coding Bootcamps Resource 156,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",3.26
+157,Investments Resource 157,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",3.68
+158,Coding Bootcamps Resource 158,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",2.6
+159,Resume Building Resource 159,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.28
+160,Online Courses Resource 160,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.76
+161,Savings Plans Resource 161,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.56
+162,Workshops Resource 162,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",0.82
+163,Gadgets Resource 163,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",2.69
+164,Savings Plans Resource 164,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",3.86
+165,Diet Plans Resource 165,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",1.76
+166,Gadgets Resource 166,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",4.09
+167,Diet Plans Resource 167,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",3.59
+168,Diet Plans Resource 168,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",4.6
+169,Scholarships Resource 169,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",2.91
+170,Tech News Resource 170,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",4.37
+171,Resume Building Resource 171,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",0.51
+172,Coding Bootcamps Resource 172,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",0.5
+173,Tech News Resource 173,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",0.89
+174,Resume Building Resource 174,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",4.52
+175,Gadgets Resource 175,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",1.13
+176,Online Courses Resource 176,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",2.39
+177,Gadgets Resource 177,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",3.92
+178,Skill Assessment Resource 178,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",3.33
+179,Skill Assessment Resource 179,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",0.69
+180,Savings Plans Resource 180,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",3.34
+181,Mental Health Resource 181,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.69
+182,Online Courses Resource 182,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",1.94
+183,Skill Assessment Resource 183,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",0.74
+184,Online Courses Resource 184,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",0.85
+185,Workshops Resource 185,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",0.65
+186,Mental Health Resource 186,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",4.29
+187,Fitness Programs Resource 187,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",0.9
+188,Investments Resource 188,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",4.58
+189,Scholarships Resource 189,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",2.85
+190,Resume Building Resource 190,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",4.67
+191,Skill Assessment Resource 191,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",3.09
+192,Tech News Resource 192,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",0.53
+193,Coding Bootcamps Resource 193,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",4.24
+194,Mental Health Resource 194,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",0.85
+195,Resume Building Resource 195,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",3.18
+196,Diet Plans Resource 196,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",3.95
+197,Workshops Resource 197,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",0.99
+198,Mental Health Resource 198,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",2.63
+199,Online Courses Resource 199,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",1.14
+200,Workshops Resource 200,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",2.37
+201,Workshops Resource 201,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",2.41
+202,Tech News Resource 202,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",1.07
+203,Diet Plans Resource 203,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",0.54
+204,Diet Plans Resource 204,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",2.78
+205,Investments Resource 205,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",2.9
+206,Job Search Resource 206,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",3.03
+207,Mental Health Resource 207,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.93
+208,Online Courses Resource 208,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",3.18
+209,Resume Building Resource 209,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",2.92
+210,Budgeting Resource 210,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",4.93
+211,Workshops Resource 211,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.4
+212,Coding Bootcamps Resource 212,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",2.38
+213,Mental Health Resource 213,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",0.69
+214,Fitness Programs Resource 214,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",0.52
+215,Resume Building Resource 215,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",3.93
+216,Fitness Programs Resource 216,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.59
+217,Gadgets Resource 217,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",4.41
+218,Job Search Resource 218,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",3.82
+219,Scholarships Resource 219,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",3.45
+220,Coding Bootcamps Resource 220,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",1.92
+221,Tech News Resource 221,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",0.51
+222,Workshops Resource 222,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",3.46
+223,Resume Building Resource 223,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",4.25
+224,Scholarships Resource 224,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.54
+225,Fitness Programs Resource 225,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.55
+226,Online Courses Resource 226,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.17
+227,Workshops Resource 227,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",1.22
+228,Budgeting Resource 228,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",4.95
+229,Budgeting Resource 229,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",2.09
+230,Savings Plans Resource 230,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.68
+231,Savings Plans Resource 231,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",0.83
+232,Gadgets Resource 232,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",2.83
+233,Savings Plans Resource 233,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",1.86
+234,Gadgets Resource 234,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",3.01
+235,Job Search Resource 235,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",3.58
+236,Budgeting Resource 236,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",2.98
+237,Gadgets Resource 237,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",1.39
+238,Fitness Programs Resource 238,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",1.62
+239,Resume Building Resource 239,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",4.04
+240,Mental Health Resource 240,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",0.52
+241,Savings Plans Resource 241,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",4.74
+242,Gadgets Resource 242,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",1.24
+243,Investments Resource 243,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",4.18
+244,Resume Building Resource 244,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.11
+245,Gadgets Resource 245,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",2.24
+246,Mental Health Resource 246,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",0.69
+247,Mental Health Resource 247,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",1.22
+248,Skill Assessment Resource 248,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",0.69
+249,Gadgets Resource 249,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",1.53
+250,Budgeting Resource 250,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",4.26
+251,Diet Plans Resource 251,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",3.76
+252,Gadgets Resource 252,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",1.92
+253,Gadgets Resource 253,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",1.68
+254,Skill Assessment Resource 254,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",1.95
+255,Workshops Resource 255,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",3.99
+256,Mental Health Resource 256,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",4.5
+257,Job Search Resource 257,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",2.78
+258,Mental Health Resource 258,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",4.08
+259,Scholarships Resource 259,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.94
+260,Skill Assessment Resource 260,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",3.07
+261,Workshops Resource 261,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",2.55
+262,Scholarships Resource 262,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.12
+263,Resume Building Resource 263,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.56
+264,Tech News Resource 264,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",1.88
+265,Savings Plans Resource 265,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",3.03
+266,Skill Assessment Resource 266,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",4.54
+267,Scholarships Resource 267,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",2.93
+268,Mental Health Resource 268,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",4.13
+269,Workshops Resource 269,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",3.08
+270,Savings Plans Resource 270,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",4.75
+271,Gadgets Resource 271,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",3.67
+272,Mental Health Resource 272,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.19
+273,Budgeting Resource 273,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",1.3
+274,Budgeting Resource 274,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",4.84
+275,Savings Plans Resource 275,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",3.3
+276,Mental Health Resource 276,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",1.45
+277,Budgeting Resource 277,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",4.63
+278,Diet Plans Resource 278,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",4.7
+279,Diet Plans Resource 279,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",1.17
+280,Mental Health Resource 280,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",1.01
+281,Coding Bootcamps Resource 281,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",2.54
+282,Workshops Resource 282,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",2.34
+283,Resume Building Resource 283,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",4.31
+284,Budgeting Resource 284,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.83
+285,Savings Plans Resource 285,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.55
+286,Tech News Resource 286,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",1.7
+287,Savings Plans Resource 287,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",0.94
+288,Fitness Programs Resource 288,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",1.67
+289,Resume Building Resource 289,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",0.99
+290,Job Search Resource 290,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",1.8
+291,Scholarships Resource 291,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",3.48
+292,Online Courses Resource 292,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.42
+293,Scholarships Resource 293,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",0.65
+294,Workshops Resource 294,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",2.12
+295,Workshops Resource 295,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",2.5
+296,Mental Health Resource 296,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.86
+297,Resume Building Resource 297,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",0.97
+298,Workshops Resource 298,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",1.84
+299,Workshops Resource 299,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.82
+300,Investments Resource 300,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",3.97
+301,Coding Bootcamps Resource 301,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",2.55
+302,Tech News Resource 302,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",1.06
+303,Coding Bootcamps Resource 303,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",1.68
+304,Coding Bootcamps Resource 304,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",1.72
+305,Fitness Programs Resource 305,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.52
+306,Tech News Resource 306,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",1.73
+307,Budgeting Resource 307,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",1.6
+308,Job Search Resource 308,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",2.9
+309,Scholarships Resource 309,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",2.08
+310,Mental Health Resource 310,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",2.77
+311,Online Courses Resource 311,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",2.44
+312,Job Search Resource 312,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",1.69
+313,Scholarships Resource 313,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.19
+314,Savings Plans Resource 314,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",4.92
+315,Tech News Resource 315,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",3.61
+316,Online Courses Resource 316,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",1.79
+317,Tech News Resource 317,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",2.15
+318,Skill Assessment Resource 318,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",5.0
+319,Fitness Programs Resource 319,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",0.99
+320,Fitness Programs Resource 320,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",2.99
+321,Resume Building Resource 321,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",3.04
+322,Workshops Resource 322,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",3.49
+323,Mental Health Resource 323,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.29
+324,Mental Health Resource 324,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",2.76
+325,Coding Bootcamps Resource 325,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",2.31
+326,Tech News Resource 326,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",4.15
+327,Job Search Resource 327,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",1.68
+328,Resume Building Resource 328,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",0.96
+329,Savings Plans Resource 329,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",4.25
+330,Gadgets Resource 330,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",2.37
+331,Diet Plans Resource 331,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",2.57
+332,Fitness Programs Resource 332,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",1.12
+333,Investments Resource 333,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",4.66
+334,Fitness Programs Resource 334,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",3.43
+335,Investments Resource 335,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",1.1
+336,Budgeting Resource 336,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",4.23
+337,Coding Bootcamps Resource 337,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",1.03
+338,Online Courses Resource 338,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",3.09
+339,Coding Bootcamps Resource 339,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",4.44
+340,Diet Plans Resource 340,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",4.0
+341,Resume Building Resource 341,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",4.84
+342,Workshops Resource 342,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",1.4
+343,Scholarships Resource 343,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",4.87
+344,Scholarships Resource 344,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",3.36
+345,Coding Bootcamps Resource 345,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",3.72
+346,Resume Building Resource 346,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.81
+347,Workshops Resource 347,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.94
+348,Diet Plans Resource 348,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",4.42
+349,Gadgets Resource 349,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",1.97
+350,Resume Building Resource 350,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.95
+351,Skill Assessment Resource 351,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",4.22
+352,Resume Building Resource 352,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",2.61
+353,Workshops Resource 353,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",0.59
+354,Savings Plans Resource 354,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.09
+355,Coding Bootcamps Resource 355,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",2.74
+356,Gadgets Resource 356,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",4.06
+357,Savings Plans Resource 357,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",3.77
+358,Fitness Programs Resource 358,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.45
+359,Tech News Resource 359,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",3.21
+360,Scholarships Resource 360,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",2.47
+361,Workshops Resource 361,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",2.18
+362,Diet Plans Resource 362,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",1.4
+363,Coding Bootcamps Resource 363,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",1.12
+364,Workshops Resource 364,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",1.57
+365,Investments Resource 365,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",2.97
+366,Budgeting Resource 366,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.02
+367,Scholarships Resource 367,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.1
+368,Skill Assessment Resource 368,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",1.47
+369,Resume Building Resource 369,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",2.53
+370,Investments Resource 370,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",2.26
+371,Online Courses Resource 371,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",3.55
+372,Fitness Programs Resource 372,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",0.67
+373,Fitness Programs Resource 373,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",2.27
+374,Scholarships Resource 374,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",4.13
+375,Investments Resource 375,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",0.91
+376,Resume Building Resource 376,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",3.67
+377,Diet Plans Resource 377,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",1.66
+378,Mental Health Resource 378,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",2.31
+379,Investments Resource 379,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",3.22
+380,Scholarships Resource 380,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.72
+381,Coding Bootcamps Resource 381,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",4.34
+382,Investments Resource 382,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",1.83
+383,Scholarships Resource 383,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",4.29
+384,Skill Assessment Resource 384,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",2.5
+385,Fitness Programs Resource 385,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",1.26
+386,Job Search Resource 386,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",1.88
+387,Diet Plans Resource 387,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",2.97
+388,Resume Building Resource 388,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",3.69
+389,Resume Building Resource 389,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",2.84
+390,Fitness Programs Resource 390,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.6
+391,Diet Plans Resource 391,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",4.94
+392,Mental Health Resource 392,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",3.27
+393,Budgeting Resource 393,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",1.05
+394,Job Search Resource 394,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",1.41
+395,Gadgets Resource 395,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",3.79
+396,Tech News Resource 396,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",1.47
+397,Workshops Resource 397,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",0.99
+398,Savings Plans Resource 398,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",3.93
+399,Budgeting Resource 399,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.81
+400,Budgeting Resource 400,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.7
+401,Skill Assessment Resource 401,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",3.41
+402,Investments Resource 402,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",2.14
+403,Scholarships Resource 403,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",0.52
+404,Fitness Programs Resource 404,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.04
+405,Savings Plans Resource 405,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.26
+406,Fitness Programs Resource 406,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",2.78
+407,Budgeting Resource 407,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",2.31
+408,Fitness Programs Resource 408,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",2.91
+409,Fitness Programs Resource 409,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",2.04
+410,Job Search Resource 410,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",3.87
+411,Fitness Programs Resource 411,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",4.99
+412,Budgeting Resource 412,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",2.31
+413,Online Courses Resource 413,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",3.59
+414,Budgeting Resource 414,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",2.58
+415,Savings Plans Resource 415,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.52
+416,Coding Bootcamps Resource 416,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",4.87
+417,Scholarships Resource 417,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",4.74
+418,Savings Plans Resource 418,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",1.82
+419,Scholarships Resource 419,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",3.55
+420,Scholarships Resource 420,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",3.18
+421,Gadgets Resource 421,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",4.28
+422,Investments Resource 422,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",4.25
+423,Fitness Programs Resource 423,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",1.83
+424,Fitness Programs Resource 424,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",2.16
+425,Online Courses Resource 425,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",3.05
+426,Coding Bootcamps Resource 426,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",3.83
+427,Tech News Resource 427,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",0.84
+428,Investments Resource 428,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",4.75
+429,Investments Resource 429,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",2.81
+430,Gadgets Resource 430,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",1.58
+431,Resume Building Resource 431,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",2.73
+432,Diet Plans Resource 432,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",2.77
+433,Budgeting Resource 433,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.25
+434,Budgeting Resource 434,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.85
+435,Workshops Resource 435,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",2.18
+436,Job Search Resource 436,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",4.2
+437,Workshops Resource 437,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",3.31
+438,Investments Resource 438,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",3.63
+439,Diet Plans Resource 439,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",3.88
+440,Coding Bootcamps Resource 440,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",3.9
+441,Tech News Resource 441,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",1.46
+442,Scholarships Resource 442,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",4.71
+443,Tech News Resource 443,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",2.94
+444,Resume Building Resource 444,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",3.86
+445,Job Search Resource 445,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",3.78
+446,Gadgets Resource 446,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",4.08
+447,Skill Assessment Resource 447,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",3.19
+448,Fitness Programs Resource 448,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",2.76
+449,Online Courses Resource 449,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.66
+450,Savings Plans Resource 450,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",1.27
+451,Fitness Programs Resource 451,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",0.86
+452,Coding Bootcamps Resource 452,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",3.9
+453,Online Courses Resource 453,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.92
+454,Skill Assessment Resource 454,A comprehensive guide and tools for skill assessment initiatives.,Career,Skill Assessment,"skill assessment, career, support",4.93
+455,Diet Plans Resource 455,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",3.43
+456,Fitness Programs Resource 456,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",1.55
+457,Job Search Resource 457,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",1.16
+458,Gadgets Resource 458,A comprehensive guide and tools for gadgets initiatives.,Technology,Gadgets,"gadgets, technology, support",3.29
+459,Workshops Resource 459,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",3.49
+460,Investments Resource 460,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",3.29
+461,Fitness Programs Resource 461,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",3.94
+462,Scholarships Resource 462,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",3.6
+463,Online Courses Resource 463,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.63
+464,Investments Resource 464,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",2.15
+465,Scholarships Resource 465,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",1.01
+466,Savings Plans Resource 466,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",4.65
+467,Diet Plans Resource 467,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",4.03
+468,Diet Plans Resource 468,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",3.4
+469,Online Courses Resource 469,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",2.15
+470,Workshops Resource 470,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",1.14
+471,Fitness Programs Resource 471,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",3.27
+472,Savings Plans Resource 472,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",1.15
+473,Workshops Resource 473,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.8
+474,Job Search Resource 474,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",1.57
+475,Job Search Resource 475,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",2.21
+476,Scholarships Resource 476,A comprehensive guide and tools for scholarships initiatives.,Education,Scholarships,"scholarships, education, support",4.07
+477,Mental Health Resource 477,A comprehensive guide and tools for mental health initiatives.,Health,Mental Health,"mental health, health, support",1.64
+478,Online Courses Resource 478,A comprehensive guide and tools for online courses initiatives.,Education,Online Courses,"online courses, education, support",4.14
+479,Job Search Resource 479,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",3.46
+480,Diet Plans Resource 480,A comprehensive guide and tools for diet plans initiatives.,Health,Diet Plans,"diet plans, health, support",2.39
+481,Investments Resource 481,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",0.52
+482,Savings Plans Resource 482,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.63
+483,Budgeting Resource 483,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",1.78
+484,Job Search Resource 484,A comprehensive guide and tools for job search initiatives.,Career,Job Search,"job search, career, support",4.85
+485,Resume Building Resource 485,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.33
+486,Budgeting Resource 486,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",4.39
+487,Coding Bootcamps Resource 487,A comprehensive guide and tools for coding bootcamps initiatives.,Technology,Coding Bootcamps,"coding bootcamps, technology, support",1.04
+488,Workshops Resource 488,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",1.51
+489,Budgeting Resource 489,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.58
+490,Investments Resource 490,A comprehensive guide and tools for investments initiatives.,Finance,Investments,"investments, finance, support",1.99
+491,Tech News Resource 491,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",4.96
+492,Fitness Programs Resource 492,A comprehensive guide and tools for fitness programs initiatives.,Health,Fitness Programs,"fitness programs, health, support",0.87
+493,Workshops Resource 493,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.38
+494,Budgeting Resource 494,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",1.92
+495,Savings Plans Resource 495,A comprehensive guide and tools for savings plans initiatives.,Finance,Savings Plans,"savings plans, finance, support",2.57
+496,Tech News Resource 496,A comprehensive guide and tools for tech news initiatives.,Technology,Tech News,"tech news, technology, support",3.65
+497,Workshops Resource 497,A comprehensive guide and tools for workshops initiatives.,Education,Workshops,"workshops, education, support",4.42
+498,Resume Building Resource 498,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",3.85
+499,Resume Building Resource 499,A comprehensive guide and tools for resume building initiatives.,Career,Resume Building,"resume building, career, support",1.36
+500,Budgeting Resource 500,A comprehensive guide and tools for budgeting initiatives.,Finance,Budgeting,"budgeting, finance, support",3.23
