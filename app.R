@@ -38,7 +38,7 @@ interview_questions <- read.csv("interview_questions_dataset.csv")
 cleaned_jobs<- read.csv("cleaned_jobs1.csv")
 cleaned_jobs<- cleaned_jobs %>% distinct(actual_job_title, .keep_all = TRUE)
 employment_data<- read_xlsx("Distribution.xlsx")
-resources <- read.csv("Datasets/resources_dataset.csv")
+resources <- read.csv("resources_dataset.csv")
 
 
 
