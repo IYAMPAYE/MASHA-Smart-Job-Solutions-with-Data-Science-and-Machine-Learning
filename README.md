@@ -99,3 +99,4 @@ To contribute:
 - **University of Rwanda**: For supporting the project.  
 - **OpenAI**: For GPT-3 and Whisper models used in AI interview training.  
 - **R Community**: For Shiny, enabling powerful web interfaces.
+- **NISR**: For supporting this project.
